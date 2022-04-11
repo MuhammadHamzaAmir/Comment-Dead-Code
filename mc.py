@@ -25,17 +25,17 @@ class test:
      # protected member function
     def _displayProtectedMembers(self):
 
-         # accessing protected data members
-        print("Protected Data Member: ", self._var2)
+       # accessing protected data members
+      print("Protected Data Member: ", self._var2)
 
-     # private member function
+    # private member function
     def __displayPrivateMembers(self):
 
-         # accessing private data members
-        print("Private Data Member: ", self.__var3)
+       # accessing private data members
+      print("Private Data Member: ", self.__var3)
 
-     # public member function
+    # public member function
     def accessPrivateMembers(self):
 
-         # accessing private member function
-        self.__displayPrivateMembers()
+       # accessing private member function
+      self.__displayPrivateMembers()
