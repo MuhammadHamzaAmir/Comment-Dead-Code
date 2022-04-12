@@ -1,5 +1,5 @@
 from cc import chest
-from mc import test
+from class_file import test
 e = test(3,5,8)
 #e._displayProtectedMembers()
 e.displayPublicMembers()
