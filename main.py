@@ -35,7 +35,7 @@ def get_dead_methods_names_lines_numbers(dead_methods:str) -> dict:
     dead_methods_list.pop()
 
     if len(dead_methods_list) < 1:
-        raise Exception("No dead code found")
+        print("No dead code found")
     num_regex = re.compile(":[0-9]+:")
     method_regex = re.compile("\'.*\'")
 
@@ -47,7 +47,7 @@ def get_dead_methods_names_lines_numbers(dead_methods:str) -> dict:
             dict[method_line.group()[1:-1]] = method_name.group()[1:-1]
 
     if len(dict)<0:
-        raise Exception("No dead methods found")
+        print("No dead methods found")
     return dict
 
 
@@ -63,6 +63,10 @@ def comment_dead_methods(dictionary:dict,file_path:str) -> None:
     
     :doc-author: Trelent
     """
+    if len(dictionary)<0:
+        print("No dead methods found")
+        return None
+    
     file = open(file_path,'r')
     lines = file.readlines()
     file.close()
