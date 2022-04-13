@@ -19,7 +19,7 @@ pip install vulture
 
 1. Clone the repository & open the repository root directory in terminal.
 
-2. To comment the unused the code. Follow the following pattern.
+2. To comment the unused the code. Run the command with the following pattern.
 
     ```
     <python> <main.py> <class file path> <usage file path>
