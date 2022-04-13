@@ -1,4 +1,4 @@
-# **Comment Unused Code**
+# **Unused Code Identification and Commenting**
 
 Using the `main.py` script, we can comment any unused class methods.
 
@@ -34,13 +34,13 @@ pip install vulture
     -   _displayProtectedMembers()
     -   accessPrivateMembers()
 
-6. Let's run the script.
+6. Open a terminal and run the following command to see the script in action:
 
     ```
     python main.py class_file.py usage_file.py
     ```
 
-7. The above mentioned unused methods are commented & and we can check the code in `class_file.py`.
+7. The above mentioned unused methods are commented and we can check the code in `class_file.py`.
 
 8. The output we get after running the above mentioned command is
 
