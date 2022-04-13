@@ -1,5 +1,6 @@
 import os
 import re
+import sys
 
 
 def get_unused_methods(class_file_path:str,usage_file_path:str) -> str:
@@ -109,9 +110,21 @@ def comment_unused_methods(dictionary:dict,file_path:str) -> None:
 
 
 
+def start():
+    n = len(sys.argv)
+    #print(n)
+    if n != 3:
+        print("Use the following format")
+        print("<python> <main.py> <class file path> <usage file path>")
+        sys.exit()
+    
+    class_file = sys.argv[1]
+    usage_file = sys.argv[2]
 
-p = get_unused_methods("class_file.py","usage_file.py")
-q = get_unused_methods_names_lines_numbers(p)
-comment_unused_methods(q, "class_file.py")
+    p = get_unused_methods(class_file,usage_file)
+    q = get_unused_methods_names_lines_numbers(p)
+    comment_unused_methods(q, class_file)
+
+start()
 
 
