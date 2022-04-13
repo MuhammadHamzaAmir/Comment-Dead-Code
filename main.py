@@ -111,8 +111,16 @@ def comment_unused_methods(dictionary:dict,file_path:str) -> None:
 
 
 def start():
+    """
+    The start function is the main function of this script. It is responsible for 
+    calling all other functions in the correct order and displaying output to the user.
+    
+    :return: The list of unused methods.
+    
+    :doc-author: Trelent
+    """
     n = len(sys.argv)
-    #print(n)
+
     if n != 3:
         print("Use the following format")
         print("<python> <main.py> <class file path> <usage file path>")
