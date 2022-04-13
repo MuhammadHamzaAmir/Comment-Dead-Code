@@ -1,6 +1,6 @@
 # **Comment Unused Code**
 
-Using the `main.py` script, we can comment any unused code.
+Using the `main.py` script, we can comment any unused class methods.
 
 ## **Prerequisites**
 
