@@ -1,6 +1,6 @@
 # **Unused Code Identification and Commenting**
 
-Using the `main.py` script, we can comment any unused class methods.
+We can remove any unused class methods by commenting out them.
 
 ## **Prerequisites**
 
@@ -27,10 +27,10 @@ pip install vulture
 
 3. We have a class file named `class_file.py`. The usage file is named `usage_file.py`.
 
-4. In `usage_file.py`, we are calling methods from the `class_file.py` which are 
+4. In `usage_file.py`, we are calling methods from the `class_file.py` which is
     -    displayPublicMembers()
 
-5. To comment the following unused methods in `class_file.py`, which are
+5. In `class_file.py`, the methods which are not being used are
     -   _displayProtectedMembers()
     -   accessPrivateMembers()
 
