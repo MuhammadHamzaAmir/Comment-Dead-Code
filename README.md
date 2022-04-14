@@ -1,6 +1,6 @@
 # **Unused Code Identification and Commenting**
 
-We can remove any unused class methods by commenting out them.
+We have automated the process of commenting out the unused class methods.
 
 ## **Prerequisites**
 
